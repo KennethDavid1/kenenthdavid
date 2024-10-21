@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #1e1e1e, #2b2b2b); /* Gradient background */
+    color: #e0e0e0;
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner Styles */
+#banner {
+    background-image: url('images/banner.jpg'); /* Path to your banner image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    width: 100%; /* Full width */
+    height: 50vh; /* Height set to 50% of the viewport height */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Optional: Center text in the banner (if needed) */
+#banner h2 {
+    color: #fff; /* Text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
+    font-size: 2rem; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+/* Grid Layout for Computer Parts */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Frame Styles */
+.frame {
+    flex: 1 1 calc(20% - 1rem);
+    max-width: calc(20% - 1rem);
+    background-color: #2b2b2b;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s; /* Transform transition */
+}
+
+.frame:hover {
+    transform: scale(1.05); /* Scale on hover */
+}
+
+/* Ensure images fit properly */
+.frame img {
+    max-width: 80%; /* Limit the width of images within frames */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.6rem;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    max-height: 80px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #ff4d4d;
+    padding: 0.8rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+nav a:hover {
+    background-color: #ff0000;
+    border-radius: 0.3rem;
+}
+
+/* Main Content Styles */
+main {
+    padding: 1.25rem;
+    background-color: #2b2b2b;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+/* Sign In Styles */
+#sign-in {
+    padding: 2rem;
+    background-color: #1a1a1a; /* Dark background */
+    border-radius: 0.6rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.7);
+    text-align: center; /* Center text for better alignment */
+    margin: 2rem 0; /* Add margin for spacing */
+    border: 2px solid #ff4d4d; /* Red border for emphasis */
+}
+
+#sign-in h2 {
+    color: #ff4d4d; /* Red heading color */
+    font-family: 'Francois One', sans-serif; /* ROG style font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+#sign-in label {
+    margin-top: 1rem; /* Add space above labels */
+    color: #e0e0e0; /* Light gray color for labels */
+    font-family: 'Roboto Slab', serif; /* Change font style */
+}
+
+#sign-in input {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ff4d4d; /* Red border for inputs */
+    background-color: #333; /* Dark input background */
+    color: #fff; /* White text */
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+#sign-in input:focus {
+    border-color: #ff0000; /* Darker red on focus */
+    outline: none; /* Remove default outline */
+}
+
+#sign-in button {
+    background-color: #ff4d4d; /* Red button background */
+    color: #fff; /* White text */
+    border: none; /* Remove default border */
+    padding: 0.5rem 1rem; /* Add padding for button */
+    border-radius: 0.3rem;
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+#sign-in button:hover {
+    background-color: #ff0000; /* Darker red on hover */
+}
+
+/* Link Styles */
+#sign-in a {
+    color: #ff4d4d; /* Red link color */
+    text-decoration: underline; /* Underline links */
+}
+
+#sign-in a:hover {
+    color: #ff0000; /* Darker red on hover */
+}
+
+
+/* Typography Enhancements */
+h1, h2, h3 {
+    font-family: 'Francois One', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Text shadow for depth */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    padding: 0.75rem;
+    border: 1px solid #ff4d4d;
+    text-align: left;
+}
+
+th {
+    background-color: #ff4d4d;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+tr:nth-child(even) td {
+    background-color: #1e1e1e;
+}
+
+tr:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+
+/* Mobile Viewport */
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column; /* Stack grid items on smaller screens */
+    }
+
+    .frame {
+        flex: 1 1 100%; /* Make frames take full width */
+        max-width: 100%; /* Remove max-width for smaller screens */
+    }
+
+    /* Sign In Section */
+    #sign-in {
+        padding: 1rem;
+        margin: 1rem 0; /* Add margin for spacing */
+    }
+
+    #sign-in form {
+        display: flex;
+        flex-direction: column; /* Stack form elements vertically */
+    }
+
+    #sign-in label,
+    #sign-in input,
+    #sign-in button {
+        margin-bottom: 0.5rem; /* Space between form elements */
+    }
+
+    #sign-in button {
+        width: 100%; /* Make button full width */
+    }
+}
+
+/* Tablet Viewport */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid {
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+
+    .frame {
+        flex: 1 1 calc(45% - 1rem); /* Two items per row */
+        max-width: calc(45% - 1rem);
+    }
+
+    /* Sign In Section */
+    #sign-in {
+        margin: 2rem 0; /* Adjust margin for tablets */
+    }
+}

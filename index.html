@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Kenneth's Computer Parts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/K.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/K.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/K.png"/>
+    <link rel="icon" sizes="192x192" href="images/K.png">
+</head>
+
+<body>
+    <div id="container"> 
+        <!-- Header -->
+        <header>
+            <a href="index.html">
+                <img src="images/Tech-logo.png" alt="Kenneth's Computer Parts Logo"/>
+            </a>
+        </header>
+        
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="parts.html">Computer Parts</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#sign-in">Sign In</a></li> <!-- Link to Sign In Section -->
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <div id="banner">
+            <img src="images/banner.jpg" alt="A setup of computer parts"/>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <section class="content">
+                <p>Welcome to Kenneth's Computer Parts. Your guide to understanding the essential components of a computer.</p>
+                <h3>Explore Our Guide!</h3>
+                <p>Learn more about the key components that make your computer work, from processors to storage devices.</p>
+                <h4>Key Components Covered</h4>
+                <ul class="components">
+                    <li>Central Processing Unit (CPU)</li>
+                    <li>Graphics Processing Unit (GPU)</li>
+                    <li>Random Access Memory (RAM)</li>
+                    <li>Motherboard</li>
+                    <li>Storage Devices (SSD/HDD)</li>
+                </ul>
+            </section>
+        
+            <!-- Sign-In Section -->
+            <section id="sign-in">
+                <h2>Sign In</h2>
+                <form action="signin.php" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit">Sign In</button>
+                </form>
+                <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+            </section>
+
+            <!-- Computer Parts Grid -->
+            <section class="grid">
+                <figure class="frame">
+                    <a href="cpu.html"><img src="images/cpu.png" alt="Intel Core i7 CPU"/></a>
+                    <figcaption class="pic-text">Central Processing Unit (CPU)</figcaption>
+                </figure>
+        
+                <figure class="frame">
+                    <a href="gpu.html"><img src="images/gpu.jpg" alt="NVIDIA GeForce GPU"/></a>
+                    <figcaption class="pic-text">Graphics Processing Unit (GPU)</figcaption>
+                </figure>
+        
+                <figure class="frame">
+                    <a href="ram.html"><img src="images/ram.jpg" alt="Image of RAM sticks"/></a>
+                    <figcaption class="pic-text">Random Access Memory (RAM)</figcaption>
+                </figure>
+        
+                <figure class="frame">
+                    <a href="motherboard.html"><img src="images/motherboard.jpg" alt="Image of a motherboard"/></a>
+                    <figcaption class="pic-text">Motherboard</figcaption>
+                </figure>
+        
+                <figure class="frame">
+                    <a href="storage.html"><img src="images/storage.jpg" alt="Image of SSD and HDD"/></a>
+                    <figcaption class="pic-text">Storage Devices (SSD/HDD)</figcaption>
+                </figure>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Kenneth's Computer Parts. All rights reserved.</p>
+            <p><a href="mailto:kenneth@computerparts.com">Contact Us</a></p>
+        </footer>
+    </div>
+</body>
+</html>
